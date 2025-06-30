@@ -1,0 +1,102 @@
+:root {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #9fa8c4;
+  background-color: #0d0e25;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1;
+  color: white;
+  margin: 0;
+}
+
+h3 {
+  color: #7aaead;
+  text-align: start;
+}
+
+#textUnderCV {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #2a2d4d;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.input-group .input-icon {
+  color: #7b86aa;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 14px;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+input::placeholder {
+  color: #9fa8c4;
+  opacity: 1; 
+}
+
+button {
+  width: 200px;
+  height: fit-content;
+  border-radius: 70px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
