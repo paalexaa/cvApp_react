@@ -1,0 +1,65 @@
+.cvDisplay {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+  color: #d4d8e8;
+  line-height: 1.7;
+}
+
+.cv-section {
+  margin-bottom: 28px;
+}
+
+.cv-section h2 {
+  font-size: 1.4em;
+  margin-bottom: 16px;
+  color: #7aaead;
+  border-bottom: 1px solid #2a2d4d;
+  padding-bottom: 4px;
+}
+
+.cv-section p {
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+.cv-section span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 0.7em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(90deg, #3b82f6, #a855f7);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 768px) {
+  .cv-container {
+    padding: 20px;
+  }
+
+  .cv-container h1 {
+    font-size: 2em;
+  }
+
+  .cv-section h2 {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
