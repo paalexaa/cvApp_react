@@ -2,6 +2,7 @@ import { MdWork } from "react-icons/md";
 import { IoIosMenu } from "react-icons/io";
 import { CiCalendarDate } from "react-icons/ci";
 import '../styles/ExperienceInfo.css';
+import 'react-datepicker/dist/react-datepicker.css';
 
 function ExperienceInfo ({companyName, setCompanyName, positionTitle, setPositionTitle, responsibilities, setResponsibilities, date, setDate}) {
     return (
@@ -21,7 +22,10 @@ function ExperienceInfo ({companyName, setCompanyName, positionTitle, setPositio
             </div>
             <div className="input-group">
                 <CiCalendarDate className="input-icon"/>
-                <input type='text' placeholder="Date" value={date} onChange={(e => setDate(e.target.value))} />
+                <input type='text' placeholder="Work period (e.g. June 2022 - Present)" value={date} onChange={(e => setDate(e.target.value))} 
+                    pattern="^[A-Za-z]+\s\d{4}\s-\s(?:[A-Za-z]+\s\d{4}|Present)$"
+                    title="Format: Month YYYY - Month YYYY or Present" 
+                />
             </div>
         </div>
     )

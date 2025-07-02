@@ -4,3 +4,23 @@
     padding: 1px 15px 5px;
     margin-bottom: 20px;
 }
+
+.phone-input-wrapper {
+  position: relative;
+  align-items: center;
+}
+
+.phone-input-wrapper .input-icon {
+  position: absolute;
+  left: 12px;
+  z-index: 2;
+  font-size: 18px;
+  color: #7b86aa;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.phone-input-wrapper .search-box {
+  color: #7b86aa;
+}
